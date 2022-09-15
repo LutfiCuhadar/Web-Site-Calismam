@@ -1,0 +1,655 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: white;
+}
+
+@media screen and (min-width: 1366px) {
+    header{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0rem 2rem;
+        width: 100%;
+        height: 77px;
+        background: black;
+        z-index: 10;
+    }
+    
+    header h1{
+        width: 120px;
+        height: 70px;
+        padding-top: 10px;
+        margin-left: 155px;
+    }
+    
+    header h1 a{
+        display: block;
+        height: 100%;
+        text-indent: -9999px;
+        background: url(assets/LutfiLogo.png) no-repeat center center;
+    }
+    
+    header nav ul{
+        list-style: none;
+        display: flex;
+    }
+    
+    header nav ul li{
+        margin: 0rem .5rem;
+    }
+    
+    header nav ul li a {
+        color: rgb(255, 255, 255);
+        font-family: 'Roboto Flex';
+        font-weight: 200;
+        padding: 1.9rem .8rem;
+        margin: 1rem;
+        margin-right: 9rem;
+        margin-left: -8rem;
+        transition: 350ms all;
+        cursor: pointer;
+    }
+    
+    header nav ul li a:hover {
+        background-color:rgba(255, 255, 255, 0.9);
+        color: rgb(0, 0, 0);
+        border-radius: 0.3rem;
+        padding: 1.9rem 0.8rem;
+    }
+    
+    ul#anayapi a.alt {
+        font-family: 'Roboto Flex';
+        font-weight: 200;
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        width: 150px;
+        height: 40px;
+        line-height: 53px;
+        background-color: black;
+        text-align: center;
+        padding: 1.9rem .8rem;
+        border-radius: 0.3rem;
+        transition: 300ms all;
+    }
+    
+    ul#anayapi a.alt:hover {
+        background-color: rgb(54, 54, 54);
+    }
+    
+    ul#anayapi li {
+        float: left;
+        position: relative;
+        width: 110px;
+    }
+    
+    ul#anayapi li ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 62px;
+    }
+    
+    ul#anayapi li:hover ul {
+        display: block;
+    }
+    
+    ul#anayapi li ul li.altmenu {
+        display: block;
+        color: rgb(255, 255, 255);
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        transform: translateX(1px);
+    }
+    
+    ul#anayapi li ul li.altmenu2 {
+        display: block;
+        color: rgb(255, 255, 255);
+        width: 150px;
+        height: 70px;
+        transform: translateY(38.9px);
+    }
+    
+    body h2 {
+        transform: translateY(160px);
+        margin-left: 150px;
+        font-family: 'Encode Sans Semi Expanded';
+        font-weight: 200;
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+    
+    body p {
+        transform: translateY(200px);
+        margin-left: 100px;
+        font-family: 'Encode Sans';
+        line-height: 21px;
+    }
+    
+    body p.ide {
+        transform: translateY(250px);
+        margin-left: 100px;
+        letter-spacing: .1px;
+        font-family: 'Encode Sans Semi Expanded';
+        font-size: 17px;
+    }
+    
+    body p.ide2 {
+        transform: translateY(260px);
+        margin-left: 100px;
+        font-family: 'Encode Sans';
+        font-size: 14.2px;
+        line-height: 21px;
+    }
+    
+    div.cizgi3 {
+        width: 7%;
+        height: 5px;
+        background: url(assets/Line\ 1.png) no-repeat;
+        transform: translateY(94px);
+    }
+    
+    body p.telif {
+        font-family: 'Encode Sans';
+        font-size: 14px;
+        transform: translateY(80px);
+        margin-left: 110px;
+        height: 0px;
+    }
+    
+    div.cizgi4 {
+        width: 70%;
+        height: 5px;
+        background: url(assets/Line\ 1.png) no-repeat;
+        margin-left: 300px;
+        transform: translateY(90px);
+    }
+    
+    div.cizgi5 {
+        width: 30%;
+        height: 5px;
+        background: url(assets/Line\ 1.png) no-repeat;
+        margin-left: 725px;
+        transform: translateY(85px);
+    }
+    
+    nav.youtube h1 {
+        width: 10%;
+        height: 30px;
+        transform: translateY(63.5px);
+        margin-left: 1120px;
+    }
+    
+    nav.youtube h1 a {
+        display: block;
+        height: 30px;
+        text-indent: -9999px;
+        width: 35px;
+        background: url(assets/Youtube.svg) no-repeat;
+    }
+    
+    section nav.ınstagram h1 {
+        width: 10%;
+        height: 30px;
+        transform: translateY(35px);
+        margin-left: 1170px;
+    }
+    
+    section nav.ınstagram h1 a {
+        display: block;
+        height: 30px;
+        text-indent: -9999px;
+        width: 35px;
+        background: url(assets/Instagram.svg) no-repeat;
+    }
+    
+    div.cizgi6 {
+        width: 10%;
+        height: 10px;
+        background: url(assets/Line\ 1.png) no-repeat;
+        transform: translateY(20px);
+        margin-left: 1225px;
+    }
+    
+    div.footer {
+        position: absolute;
+        left: 0;
+        bottom: 130px;
+        height: 0;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width:1365px) {
+    header{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0rem 2rem;
+        width: 940px;
+        height: 77px;
+        background: black;
+        z-index: 10;
+    }
+    
+    header h1{
+        width: 120px;
+        height: 70px;
+        padding-top: 10px;
+        margin-left: 155px;
+    }
+    
+    header h1 a{
+        display: block;
+        height: 100%;
+        text-indent: -9999px;
+        background: url(assets/LutfiLogo.png) no-repeat center center;
+    }
+    
+    header nav ul{
+        list-style: none;
+        display: flex;
+    }
+    
+    header nav ul li{
+        margin: 0rem .5rem;
+    }
+    
+    header nav ul li a {
+        color: rgb(255, 255, 255);
+        font-family: 'Roboto Flex';
+        font-weight: 200;
+        padding: 1.9rem .8rem;
+        margin: 1rem;
+        margin-right: 9rem;
+        margin-left: -8rem;
+        transition: 350ms all;
+        cursor: pointer;
+    }
+    
+    header nav ul li a:hover {
+        background-color:rgba(255, 255, 255, 0.9);
+        color: rgb(0, 0, 0);
+        border-radius: 0.3rem;
+        padding: 1.9rem 0.8rem;
+    }
+    
+    ul#anayapi a.alt {
+        font-family: 'Roboto Flex';
+        font-weight: 200;
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        width: 150px;
+        height: 40px;
+        line-height: 53px;
+        background-color: black;
+        text-align: center;
+        padding: 1.9rem .8rem;
+        border-radius: 0.3rem;
+        transition: 300ms all;
+    }
+    
+    ul#anayapi a.alt:hover {
+        background-color: rgb(54, 54, 54);
+    }
+    
+    ul#anayapi li {
+        float: left;
+        position: relative;
+        width: 110px;
+    }
+    
+    ul#anayapi li ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 62px;
+    }
+    
+    ul#anayapi li:hover ul {
+        display: block;
+    }
+    
+    ul#anayapi li ul li.altmenu {
+        display: block;
+        color: rgb(255, 255, 255);
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        transform: translateX(1px);
+    }
+    
+    ul#anayapi li ul li.altmenu2 {
+        display: block;
+        color: rgb(255, 255, 255);
+        width: 150px;
+        height: 70px;
+        transform: translateY(38.9px);
+    }
+    
+    body h2 {
+        transform: translateY(160px);
+        margin-left: 100px;
+        font-family: 'Encode Sans Semi Expanded';
+        font-weight: 200;
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+    
+    body p {
+        transform: translateY(200px);
+        margin-left: 20px;
+        font-family: 'Encode Sans';
+        line-height: 21px;
+        font-size: 14px;
+    }
+    
+    body p.ide {
+        transform: translateY(250px);
+        margin-left: 20px;
+        letter-spacing: .1px;
+        font-family: 'Encode Sans Semi Expanded';
+        font-size: 17px;
+    }
+    
+    body p.ide2 {
+        transform: translateY(260px);
+        margin-left: 20px;
+        font-family: 'Encode Sans';
+        font-size: 14.2px;
+        line-height: 21px;
+    }
+
+    div.cizgi3 {
+        width: 7%;
+        height: 5px;
+        background: url(assets/Line\ 1.png) no-repeat;
+        transform: translateY(145px);
+    }
+    
+    body p.telif {
+        font-family: 'Encode Sans';
+        font-size: 14px;
+        transform: translateY(130px);
+        margin-left: 105px;
+        height: 0px;
+    }
+    
+    div.cizgi4 {
+        width: 70%;
+        height: 5px;
+        background: url(assets/Line\ 1.png) no-repeat;
+        margin-left: 300px;
+        transform: translateY(140px);
+    }
+    
+    div.cizgi5 {
+        display: none;
+    }
+    
+    nav.youtube h1 {
+        width: 10%;
+        height: 30px;
+        transform: translateY(118px);
+        margin-left: 750px;
+    }
+    
+    nav.youtube h1 a {
+        display: block;
+        height: 30px;
+        text-indent: -9999px;
+        width: 35px;
+        background: url(assets/Youtube.svg) no-repeat;
+    }
+    
+    section nav.ınstagram h1 {
+        width: 10%;
+        height: 30px;
+        transform: translateY(88px);
+        margin-left: 800px;
+    }
+    
+    section nav.ınstagram h1 a {
+        display: block;
+        height: 30px;
+        text-indent: -9999px;
+        width: 35px;
+        background: url(assets/Instagram.svg) no-repeat;
+    }
+    
+    div.cizgi6 {
+        width: 10%;
+        height: 10px;
+        background: url(assets/Line\ 1.png) no-repeat;
+        transform: translateY(75px);
+        margin-left: 855px;
+    }
+    
+    div.footer {
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        height: 0;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width:767px) {
+    header{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0rem 2rem;
+        width: 767px;
+        height: 77px;
+        background: black;
+        z-index: 10;
+    }
+    
+    header h1{
+        width: 120px;
+        height: 70px;
+        padding-top: 10px;
+        margin-left: 155px;
+    }
+    
+    header h1 a{
+        display: block;
+        height: 100%;
+        text-indent: -9999px;
+        background: url(assets/LutfiLogo.png) no-repeat center center;
+    }
+    
+    header nav ul{
+        list-style: none;
+        display: flex;
+    }
+    
+    header nav ul li{
+        margin: 0rem .5rem;
+    }
+    
+    header nav ul li a {
+        color: rgb(255, 255, 255);
+        font-family: 'Roboto Flex';
+        font-weight: 200;
+        padding: 1.9rem .8rem;
+        margin: 1rem;
+        margin-right: 9rem;
+        margin-left: -8rem;
+        transition: 350ms all;
+        cursor: pointer;
+    }
+    
+    header nav ul li a:hover {
+        background-color:rgba(255, 255, 255, 0.9);
+        color: rgb(0, 0, 0);
+        border-radius: 0.3rem;
+        padding: 1.9rem 0.8rem;
+    }
+    
+    ul#anayapi a.alt {
+        font-family: 'Roboto Flex';
+        font-weight: 200;
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        width: 150px;
+        height: 40px;
+        line-height: 53px;
+        background-color: black;
+        text-align: center;
+        padding: 1.9rem .8rem;
+        border-radius: 0.3rem;
+        transition: 300ms all;
+    }
+    
+    ul#anayapi a.alt:hover {
+        background-color: rgb(54, 54, 54);
+    }
+    
+    ul#anayapi li {
+        float: left;
+        position: relative;
+        width: 110px;
+    }
+    
+    ul#anayapi li ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 62px;
+    }
+    
+    ul#anayapi li:hover ul {
+        display: block;
+    }
+    
+    ul#anayapi li ul li.altmenu {
+        display: block;
+        color: rgb(255, 255, 255);
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        transform: translateX(1px);
+    }
+    
+    ul#anayapi li ul li.altmenu2 {
+        display: block;
+        color: rgb(255, 255, 255);
+        width: 150px;
+        height: 70px;
+        transform: translateY(38.9px);
+    }
+    
+    body h2 {
+        transform: translateY(160px);
+        margin-left: 100px;
+        font-family: 'Encode Sans Semi Expanded';
+        font-weight: 200;
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+    
+    body p {
+        transform: translateY(200px);
+        margin-left: 20px;
+        font-family: 'Encode Sans';
+        line-height: 21px;
+        font-size: 14px;
+    }
+    
+    body p.ide {
+        transform: translateY(250px);
+        margin-left: 20px;
+        letter-spacing: .1px;
+        font-family: 'Encode Sans Semi Expanded';
+        font-size: 17px;
+    }
+    
+    body p.ide2 {
+        transform: translateY(260px);
+        margin-left: 20px;
+        font-family: 'Encode Sans';
+        font-size: 14.2px;
+        line-height: 21px;
+    }
+
+    div.cizgi3 {
+        width: 7%;
+        height: 5px;
+        background: url(assets/Line\ 1.png) no-repeat;
+        transform: translateY(145px);
+    }
+    
+    body p.telif {
+        font-family: 'Encode Sans';
+        font-size: 11px;
+        transform: translateY(132.5px);
+        margin-left: 70px;
+        height: 0px;
+    }
+    
+    div.cizgi4 {
+        width: 50%;
+        height: 5px;
+        background: url(assets/Line\ 1.png) no-repeat;
+        margin-left: 220px;
+        transform: translateY(140px);
+    }
+    
+    div.cizgi5 {
+        display: none;
+    }
+    
+    nav.youtube h1 {
+        width: 10%;
+        height: 30px;
+        transform: translateY(118px);
+        margin-left: 580px;
+    }
+    
+    nav.youtube h1 a {
+        display: block;
+        height: 30px;
+        text-indent: -9999px;
+        width: 35px;
+        background: url(assets/Youtube.svg) no-repeat;
+    }
+    
+    section nav.ınstagram h1 {
+        width: 10%;
+        height: 30px;
+        transform: translateY(88px);
+        margin-left: 630px;
+    }
+    
+    section nav.ınstagram h1 a {
+        display: block;
+        height: 30px;
+        text-indent: -9999px;
+        width: 35px;
+        background: url(assets/Instagram.svg) no-repeat;
+    }
+    
+    div.cizgi6 {
+        width: 10%;
+        height: 10px;
+        background: url(assets/Line\ 1.png) no-repeat;
+        transform: translateY(75px);
+        margin-left: 680px;
+    }
+    
+    div.footer {
+        position: absolute;
+        left: 0;
+        bottom: 170px;
+        height: 0;
+    }
+}
